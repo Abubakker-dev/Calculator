@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Bootstrap Learning</title>
+	<link rel="shortcut icon" type="image/x-icon" href="images/twitter.png">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	
+
+
+	<div class="container">
+		<div class="row justify-content-center pt-5">
+			<div class="col-lg-6 pt-5">
+				<form action="#" name="calcut">
+					<input type="text" name="show" class="form-control bg-dark text-white" readonly>
+					<input type="button" name="one" value="1" onclick="keyOne()" class="btn btn-dark">
+					<input type="button" name="two" value="2" onclick="keyTwo()" class="btn btn-dark">
+					<input type="button" name="three" value="3" onclick="keyThree()" class="btn btn-dark">
+					<input type="button" name="our" value="4" onclick="keyOur()" class="btn btn-dark">
+					<input type="button" name="ive" value="5" onclick="keyIve()" class="btn btn-dark">
+					<input type="button" name="six" value="6" onclick="keySix()" class="btn btn-dark">
+					<input type="button" name="seven" value="7" onclick="keySeven()" class="btn btn-dark">
+					<input type="button" name="eight" value="8" onclick="keyEight()" class="btn btn-dark">
+					<input type="button" name="nine" value="9" onclick="keyNine()" class="btn btn-dark">
+					<input type="button" name="zero" value="0" onclick="keyZero()" class="btn btn-dark">
+					<input type="button" name="sub" value="-" onclick="keySub()" class="btn btn-dark">
+					<input type="button" name="add" value="+" onclick="keyAdd()" class="btn btn-dark">
+					<input type="button" name="divi" value="/"  onclick="keyDivi()" class="btn btn-dark">
+					<input type="button" name="mult" value="*"  onclick="keymult()" class="btn btn-dark">
+					<input type="button" name="equl" value="="  onclick="keyEqul()" class="btn btn-dark">
+					<input type="button" name="empty" value="clear"  onclick="keyEmpty()" class="btn btn-dark">
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script>
+
+		function keyOne(){
+			document.calcut.show.value += 1;
+		}		
+		function keyTwo(){
+			document.calcut.show.value += 2;
+		}		
+		function keyThree(){
+			document.calcut.show.value += 3;
+		}		
+		function keyOur(){
+			document.calcut.show.value += 4;
+		}		
+		function keyIve(){
+			document.calcut.show.value += 5;
+		}		
+		function keySix(){
+			document.calcut.show.value += 6;
+		}		
+		function keySeven(){
+			document.calcut.show.value += 7;
+		}		
+		function keyEight(){
+			document.calcut.show.value += 8;
+		}		
+		function keyNine(){
+			document.calcut.show.value += 9;
+		}			
+		function keyZero(){
+			document.calcut.show.value += 0;
+		}				
+		function keySub(){
+			document.calcut.show.value += '-';
+		}		
+		function keyAdd(){
+			document.calcut.show.value += '+';
+		}		
+		function keyDivi(){
+			document.calcut.show.value += '/';
+		}		
+		function keymult(){
+			document.calcut.show.value += '*';
+		}		
+		function keyEmpty(){
+			document.calcut.show.value = "";
+		}
+				
+		function keyEqul(){
+			var Datashow = eval(document.calcut.show.value);
+			document.calcut.show.value = Datashow;
+		}
+		
+
+	</script>
+</body>
+</html>

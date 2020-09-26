@@ -1,0 +1,28 @@
+body{
+	margin: 0;
+}
+form .form-control:focus {
+    box-shadow: inherit;
+}
+form .btn:focus{
+	box-shadow: inherit;
+	outline: 0;
+}
+form input[type='button']{
+	display: block;
+	float: left;
+	width: 25%;
+	border: 1px solid white;
+	padding: 15px 0;
+	font-size: 20px;
+}
+form input[type='text']{
+	padding: 30px 10px;
+	margin-bottom: 1px;
+	font-size: 18px;
+}
+.btn-dark:focus {
+    color: #fff;
+    border-color: white;
+    box-shadow: inherit !important;
+}
